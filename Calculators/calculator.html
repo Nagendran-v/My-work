@@ -1,0 +1,73 @@
+
+<html>
+<head>
+
+</head>
+<body>
+<center>
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+
+		input[type="button"] { 
+			width: 4%; 
+			padding: 20px 40px; 
+			background-color: gray; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: all; 
+			border-radius: 5px; 
+		} 
+
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+<form name ="calc">
+<input type ="text" name="results">
+<br>
+<br>
+<input type="button" value="C" onclick="calc.results.value = ''">
+<input type="button" value="(" onclick="calc.results.value = calc.results.value + '('">
+<input type="button" value=")" onclick="calc.results.value = calc.results.value + ')'">
+<input type="button" value="/" onclick="calc.results.value = calc.results.value + '/'">
+<br>
+
+<input type="button" value="7" onclick="calc.results.value = calc.results.value + '7'">
+<input type="button" value="8" onclick="calc.results.value = calc.results.value + '8'">
+<input type="button" value="9" onclick="calc.results.value = calc.results.value + '9'">
+<input type="button" value="*" onclick="calc.results.value = calc.results.value + '*'">
+<br>
+
+<input type="button" value="4" onclick="calc.results.value = calc.results.value + '4'">
+<input type="button" value="5" onclick="calc.results.value = calc.results.value + '5'">
+<input type="button" value="6" onclick="calc.results.value = calc.results.value + '6'">
+<input type="button" value="-" onclick="calc.results.value = calc.results.value + '-'">
+<br>
+
+<input type="button" value="1" onclick="calc.results.value = calc.results.value + '1'">
+<input type="button" value="2" onclick="calc.results.value = calc.results.value + '2'">
+<input type="button" value="3" onclick="calc.results.value = calc.results.value + '3'">
+<input type="button" value="+" onclick="calc.results.value = calc.results.value + '+'">
+<br>
+
+<input type="button" value="00" onclick="calc.results.value = calc.results.value + '00'">
+<input type="button" value="0" onclick="calc.results.value = calc.results.value + '0'">
+<input type="button" value="." onclick="calc.results.value = calc.results.value + '.'">
+<input type="button" value="=" onclick="calc.results.value = eval(calc.results.value)">
+<br>
+
+</form>
+</center>
+</body>
+</html>
+
